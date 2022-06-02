@@ -4,10 +4,16 @@ public class CriaConta {
 
 	public static void main(String[] args) {
 		
-		Conta pc = new Conta();		
-		pc.saldo = 200;
+		Conta primeiraConta = new Conta();		
+		Conta segundaConta= primeiraConta;
+		primeiraConta.saldo = 200;
+		System.out.println("Saldo da primeira conta é: " + primeiraConta.saldo);
+		segundaConta.saldo += 100;
 		
-		System.out.println(pc.saldo);
+		System.out.println("Saldo da primeira conta é: " + primeiraConta.saldo);
+		
+		
+	
 
 	}
 
