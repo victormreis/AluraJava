@@ -2,18 +2,20 @@
 public class TesteFuncionario {
 	public static void main(String[] args) {
 		
-		Funcionario func = new Funcionario();
 		
-		func.setNome("Victor");
-		func.setSalario(2000);
+		Gerente gen = new Gerente();
+		ControlaBonificacao controle = new ControlaBonificacao();
 		
-		System.out.println(func.getSalario());
+		gen.setNome("Daiane");
+		gen.setSalario(5000);
+	
 		
-		System.out.println(func.getBonificacao());
 		
-		func.setSalario(func.getBonificacao());
+		controle.registra(gen);
 		
-		System.out.println(func.getSalario());
+		System.out.println(controle.getSoma());
+		
+		
 		
 	
 	}

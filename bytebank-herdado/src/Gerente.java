@@ -17,11 +17,15 @@ public class Gerente extends Funcionario {
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
-	
-	
+
+	@Override
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();
+		// TODO Auto-generated method stub
+		return super.getSalario()+1000;
 	}
+	
+	
+}
 	
 	
 	
@@ -29,4 +33,4 @@ public class Gerente extends Funcionario {
 	
 	
 
-}
+
